@@ -5,6 +5,7 @@ import meter1 from '../assets/img/meter1.svg';
 import meter2 from '../assets/img/meter2.svg';
 import meter3 from '../assets/img/meter3.svg';
 import colorSharp from '../assets/img/color-sharp.png';
+// import colorSharp from '../assets/img/abstract-background1.jpg';
 
 export const Skills = () => {
     const responsive = {
@@ -38,19 +39,19 @@ export const Skills = () => {
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} alt="" />
                                     <h5>Full Stack Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={meter2} alt="" />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
+                                    <img src={meter3} alt="" />
                                     <h5>Product Management</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={meter1} alt="" />
                                     <h5>Business Analysis</h5>
                                 </div>
                             </Carousel>
@@ -58,7 +59,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="bakcground-image-left" src={colorSharp} />
+            <img className="background-image-left" src={colorSharp} alt=""/>
         </section>
     )
     }

@@ -12,3 +12,6 @@ services:
       NODE_ENV: development
       HOST: '0.0.0.0'
       PUBLIC_URL: ${PUBLIC_URL}
+      EMAIL_USER: ${EMAIL_USER}
+      EMAIL_PASS: ${EMAIL_PASS}
+      MAIL_SERVER_URL: ${MAIL_SERVER_URL}
