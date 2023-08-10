@@ -47,7 +47,7 @@ export const Contact = () => {
         <section className="contact" id="connect">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={{span: 6, offset: 6, order: 'last'}} lg={{span: 6, offset: 0, order: 'first'}} className="align-self-end d-flex justify-content-center align-self-sm-end">
+                    <Col xs={{span: 6, offset: 6, order: 'last'}} lg={{span: 6, offset: 0, order: 'first'}} className="align-self-end d-flex justify-content-center">
                         <img src={contactImg} alt="Contact Us"/>
                     </Col>
                     <Col lg={{span: 6}}>

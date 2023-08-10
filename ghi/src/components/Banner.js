@@ -56,7 +56,7 @@ export const Banner = () => {
                                 <button>Let's Connect <ArrowRightCircle size={25} /></button>
                             </HashLink>
                         </Col>
-                        <Col xs={12} md={6} xl={5}>
+                        <Col xs={12} md={6} xl={5} className="d-flex justify-content-center">
                             <img src={headerImg} alt="Header Img" />
                         </Col>
                     </Row>

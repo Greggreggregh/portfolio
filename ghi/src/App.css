@@ -248,6 +248,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  width: 100%;
+  max-width: 420px;
 }
 @keyframes updown {
     0% {
@@ -439,7 +441,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact img {
   width: 80%;
   max-width: 420px;
-  order: 2;
 }
 .contact h2 {
 	font-size: 45px;
@@ -448,7 +449,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form {
   margin-bottom: 30px;
-  order: 1;
 }
 .contact form input, .contact form textarea {
   width: 100%;
