@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 // import logo from '../assets/img/logo.svg';
-import logo from '../assets/img/greg-smiling-memoji.png';
+import logo from '../assets/img/greg-smiling-memoji-close.png';
 import linkedinIcon from '../assets/img/linkedin-icon-white.svg';
 import githubIcon from '../assets/img/github-mark-white.svg';
 import gitlabIcon from '../assets/img/gitlab-logo-white.svg';
