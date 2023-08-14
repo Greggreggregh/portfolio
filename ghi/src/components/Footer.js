@@ -7,8 +7,8 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <Container>
-                <Row className="align-item-center">
-                    <Col sm={6} className="align-self-center">
+                <Row className="align-items-center">
+                    <Col sm={6} className="text-center text-sm-start align-self-center">
                         <span>© 2023 Greg Herren. All Rights Reserved</span>
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
