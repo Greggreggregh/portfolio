@@ -60,6 +60,9 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
 }
+nav.navbar.expanded {
+  background-color: #121212;
+}
 nav.navbar a.navbar-brand {
     width: 9%;
 }
@@ -199,36 +202,70 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*Banner CSS*/
 .banner {
   margin-top: 0;
-  padding: 260px 0 50px 0;
+  padding: 217px 0 50px 0;
   background: linear-gradient( #7c0dd2, #4b26c7);
 }
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 0px;
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
+.mobile-banner {
+  margin-top: 0;
+  padding: 0 0 50px 0;
+  background: linear-gradient(  #7C0DD2, #4b26c7);
+  position: relative;
+  z-index: 1;
 }
-.banner h1 {
+.mobile-banner-image {
+  padding: 100px 0 0 0;
+  background: linear-gradient( #7c0dd2, #7C0DD2);
+}
+.mobile-banner-image img {
+  animation: small-updown 3s linear infinite;
+  width: 100%;
+  max-width: 120px;
+  z-index: 0;
+  position: relative;
+}
+@keyframes small-updown {
+  0% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(140px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  90% {
+    transform: rotateZ(10deg)
+  }
+  100% {
+    transform: rotateZ(-10deg)
+  }
+}
+.banner h1, .mobile-banner h1 {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: block;
 }
-.banner p {
+.banner p, .mobile-banner p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
-.banner a {
+.banner a, .mobile-banner a {
   text-decoration: none;
 }
-.banner button {
+.banner .link button, .mobile-banner .link button {
+  color: #d38e3f;
+  font-weight: 400;
+  margin-top: 0;
+  display: inline;
+  font-size: 18px;
+}
+.banner button, .mobile-banner button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -237,19 +274,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.banner button svg, .mobile-banner button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner button:hover svg, .mobile-banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.banner img, .mobile-banner img {
   animation: updown 3s linear infinite;
   width: 100%;
   max-width: 420px;
+  align-items: start;
 }
 @keyframes updown {
     0% {
