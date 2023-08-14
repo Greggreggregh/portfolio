@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-// import logo from '../assets/img/logo.svg';
 import logo from '../assets/img/greg-smiling-memoji-close.png';
 import linkedinIcon from '../assets/img/linkedin-icon-white.svg';
 import githubIcon from '../assets/img/github-mark-white.svg';
 import gitlabIcon from '../assets/img/gitlab-logo-white.svg';
 import { HashLink } from 'react-router-hash-link';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const isNavbarCollapsed = useMediaQuery({ query: '(max-width: 991px)'});
 
   useEffect(() => {
     const onScroll = () => {
@@ -34,7 +35,7 @@ export const NavBar = () => {
 
   return (
     <BrowserRouter>
-      <Navbar expand="lg" className={scrolled ? "scrolled" : ""} expanded={expanded}>
+      <Navbar expand="lg" className={scrolled || isNavbarCollapsed ? "scrolled" : ""} expanded={expanded}>
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} style={{height: "55px"}} alt="Logo" />

@@ -8,10 +8,10 @@ export const Footer = () => {
         <footer className="footer">
             <Container>
                 <Row className="align-items-center">
-                    <Col sm={6} className="text-center text-sm-start align-self-center">
+                    <Col sm={6} className="text-center text-sm-start align-self-center pb-2">
                         <span>© 2023 Greg Herren. All Rights Reserved</span>
                     </Col>
-                    <Col sm={6} className="text-center text-sm-end">
+                    <Col sm={6} className="text-center text-sm-end pb-2">
                         <div className="social-icon">
                             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/greg-herren/"><img src={linkedinIcon} alt="" /></a>
                             <a target="_blank" rel="noreferrer" href="https://github.com/Greggreggregh"><img src={githubIcon} alt="" /></a>
