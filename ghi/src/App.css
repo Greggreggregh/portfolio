@@ -357,6 +357,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  margin: 0;
+  line-height: 75%;
+}
+.skill h5 {
+  margin: 0 0 15px 0;
+}
+.skill button {
+  color: #B8B8B8;
+  font-size: 14px;
   margin: 0 0 25px 0;
 }
 .skill p {
@@ -367,21 +376,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 0 0 0 0;
 }
 .skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  width: 100%;
+  margin: 0 0 25px 0;
   position: relative;
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+.skill-grid {
+  width: 101.5%;
+  justify-content: center;
+  margin: 0 0 25px 0;
+  padding: 0 0 0 12px;
+  position: relative;
 }
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+.item img {
+  max-width: 100%;
+  max-height: 100px;
+  margin: 0 15px 15px 15px;
+}
+.logo-bg {
+  background-color: #FFFFFF;
+  border-radius: 20%
 }
 
 /*Project CSS*/
