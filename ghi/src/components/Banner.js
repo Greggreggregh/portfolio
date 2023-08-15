@@ -72,7 +72,8 @@ export const Banner = () => {
                 <Container>
                     <Row className="align-items-center">
                         <Col xs={12} lg={8}>
-                            <h1>{`Hi👋`}&nbsp;&nbsp;{`I'm Greg,`}<br/><span className="wrap">{text}</span></h1>
+                            <h1>{isMobile ? `Hi,` : `Hi👋 `}&nbsp;{`I'm Greg:`}</h1>
+                            <h2><span>{text}</span></h2>
                             <p>A multi-faceted software engineer with a background in product and business. <br/><br/>I enjoy developing for web, mobile, and browser extensions. Check out{' '}
                                 <HashLink className="link" to='#projects'>
                                     <button>my projects</button>

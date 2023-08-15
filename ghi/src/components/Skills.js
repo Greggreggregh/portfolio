@@ -34,7 +34,6 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="" />
@@ -53,6 +52,7 @@ export const Skills = () => {
                                     <h5>Business Analysis</h5>
                                 </div>
                             </Carousel>
+                            <p>Something missing? Don't worry, I'm a quick study 🤓</p>
                         </div>
                     </Col>
                 </Row>
