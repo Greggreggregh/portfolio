@@ -217,7 +217,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient( #7c0dd2, #7C0DD2);
 }
 .mobile-banner-image img {
-  animation: updownwave 2s linear infinite;
+  animation: updownwave 10s linear infinite;
   width: 100%;
   max-width: 120px;
   z-index: 0;
@@ -227,28 +227,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   0% {
     transform: translateY(140px);
   }
-  25% {
+  5% {
     transform: translateY(10px);
   }
-  40% {
+  8% {
     transform: translateY(10px);
   }
-  45% {
+  9% {
     transform-origin: bottom right;
     transform: translateY(10px) rotate(2deg);
   }
-  50% {
+  10% {
     transform: translateY(10px) rotate(0deg);
   }
-  55% {
+  11% {
     transform-origin: bottom right;
     transform: translateY(10px) rotate(2deg);
   }
-  60% {
+  12% {
     transform: translateY(10px) rotate(0deg);
   }
-  75% {
+  15% {
     transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(140px);
   }
   100% {
     transform: translateY(140px);
