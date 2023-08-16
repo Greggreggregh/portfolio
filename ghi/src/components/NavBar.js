@@ -60,6 +60,7 @@ return () => document.removeEventListener("click", onDocumentClick);
                 <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link text-end' : 'navbar-link text-end'} onClick={() => {onUpdateActiveLink('home'); setExpanded(false);}}>Home</Nav.Link>
                 <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link text-end' : 'navbar-link text-end'} onClick={() => {onUpdateActiveLink('skills'); setExpanded(false);}}>Skills</Nav.Link>
                 <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link text-end' : 'navbar-link text-end'} onClick={() => {onUpdateActiveLink('projects'); setExpanded(false);}}>Projects</Nav.Link>
+                <Nav.Link href="#resume" className={activeLink === 'resume' ? 'active navbar-link text-end' : 'navbar-link text-end'} onClick={() => {onUpdateActiveLink('resume'); setExpanded(false);}}>Resume</Nav.Link>
               </Nav>
               <span className="navbar-text justify-content-end">
                 <div className="social-icon text-md-end">

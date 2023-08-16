@@ -523,9 +523,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/*Resume CSS*/
+.resume {
+  padding: 50px 0 50px 0;
+  position: relative;
+  background: linear-gradient(#1d5bd7, #4A2FBD);
+}
+.react-pdf__Document {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0 0 0;
+}
+.react-pdf__Page__canvas {
+  width: 100% !important;
+  max-width: 900px;
+  height: auto !important;
+}
+.resume h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-right: 5px;
+}
+.resume .download {
+  display: flex;
+  align-items: center;
+}
+.resume a {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 3px 11px;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-bottom: 8px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline 2px;
+}
+.resume a span {
+  z-index: 1;
+  position: relative;
+}
+.resume a:hover {
+  color: #fff;
+}
+.resume a::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.resume a:hover::before {
+  width: 100%;
+}
+
 /*Contact CSS*/
 .contact {
-  background: linear-gradient(#1d5bd7, #4A2FBD);
+  background: linear-gradient(#4A2FBD,  #4b26c7);
   padding: 50px 0 0 0
 }
 .contact img {
