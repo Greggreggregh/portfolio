@@ -9,9 +9,20 @@ services:
       - '3000:3000'
     environment:
       HOST_OS: ${OS}
-      NODE_ENV: development
+      NODE_ENV: ${NODE_ENV}
       HOST: '0.0.0.0'
       PUBLIC_URL: ${PUBLIC_URL}
+      REACT_APP_MAIL_SERVER_URL: ${MAIL_SERVER_URL}
+  mailer:
+    image: node:lts-bullseye
+    command: /bin/bash run.sh
+    working_dir: /app
+    volumes:
+      - ./mailer:/app
+    ports:
+      - '5000:5000'
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      HOST: '0.0.0.0'
       EMAIL_USER: ${EMAIL_USER}
       EMAIL_PASS: ${EMAIL_PASS}
-      MAIL_SERVER_URL: ${MAIL_SERVER_URL}
