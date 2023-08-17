@@ -3,13 +3,14 @@ import { ProjectCard } from './ProjectCard';
 import projImg1 from '../assets/img/project-img1.png';
 import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
+import CarPrime from '../assets/gif/CarPrime_Demo.gif';
 
 export const Projects = () => {
     const projects = [
         {
             title: "Business Startup",
             description: "Design & Development",
-            imgUrl: projImg1,
+            imgUrl: CarPrime,
         },
         {
             title: "Business Startup",
