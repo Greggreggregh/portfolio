@@ -1,11 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap"
 import { ProjectCard } from './ProjectCard';
-import projImg1 from '../assets/img/project-img1.png';
-import projImg3 from '../assets/img/project-img3.png';
 import CarPrime from '../assets/gif/CarPrime_Demo.gif';
 
 export const Projects = () => {
     const projects = [
+        {
+            title: "Plunge",
+            subtitle: "Education Marketplace",
+            description: "Python, Django, React, Redux, Bootstrap, FastAPI, PostgreSQL, Docker, Pytest",
+            imgUrl: CarPrime,
+            codeUrl: "https://gitlab.com/greg-herren/plunge",
+            appUrl: "https://greg-herren.gitlab.io/plunge/",
+        },
         {
             title: "CarPrime",
             subtitle: "Dealership Management Service",
@@ -14,20 +20,11 @@ export const Projects = () => {
             codeUrl: "https://gitlab.com/greg-herren/project-beta",
         },
         {
-            title: "Plunge",
-            subtitle: "Education Marketplace",
-            description: "Python, Django, React, Bootstrap, Docker",
+            title: "Sudoku Solver",
+            subtitle: "Solves Any Sudoku Puzzle",
+            description: "Python, Javascript, Django, React, Backtracking",
             imgUrl: CarPrime,
-            codeUrl: "https://gitlab.com/greg-herren/project-beta",
-            appUrl: "https://gitlab.com/greg-herren/project-beta",
-        },
-        {
-            title: "CarPrime",
-            subtitle: "Dealership Management Service",
-            description: "Python, Django, React, Bootstrap, Docker",
-            imgUrl: CarPrime,
-            codeUrl: "https://gitlab.com/greg-herren/project-beta",
-            appUrl: "https://gitlab.com/greg-herren/project-beta",
+            codeUrl: "https://gitlab.com/greg-herren/sudoku-solver",
         },
     ]
     return (
@@ -36,7 +33,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Check out some of the cool things I've done recently</p>
+                        <p>Check out some of the cool things I've done recently!</p>
                         {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
@@ -65,7 +62,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
                             </Tab.Content>
                         </Tab.Container> */}
-                        <Row>
+                        <Row className="d-flex justify-content-center">
                             {projects.map((project, index) => {
                                 return (
                                     <ProjectCard key={index} {...project}/>
