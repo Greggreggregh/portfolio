@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 import { ProjectCard } from './ProjectCard';
-import CarPrime from '../assets/gif/CarPrime_Demo.gif';
+import CarPrime from '../assets/gif/20230821_CarPrime_Demo.gif';
+import Plunge from '../assets/gif/20230821_Plunge_Demo.gif';
 
 export const Projects = () => {
     const projects = [
@@ -8,7 +9,7 @@ export const Projects = () => {
             title: "Plunge",
             subtitle: "Education Marketplace",
             description: "Python, Django, React, Redux, Bootstrap, FastAPI, PostgreSQL, Docker, Pytest",
-            imgUrl: CarPrime,
+            imgUrl: Plunge,
             codeUrl: "https://gitlab.com/greg-herren/plunge",
             appUrl: "https://greg-herren.gitlab.io/plunge/",
         },
@@ -18,13 +19,6 @@ export const Projects = () => {
             description: "Python, Javascript, Django, React, Bootstrap, Docker",
             imgUrl: CarPrime,
             codeUrl: "https://gitlab.com/greg-herren/project-beta",
-        },
-        {
-            title: "Sudoku Solver",
-            subtitle: "Solves Any Sudoku Puzzle",
-            description: "Python, Javascript, Django, React, Backtracking",
-            imgUrl: CarPrime,
-            codeUrl: "https://gitlab.com/greg-herren/sudoku-solver",
         },
     ]
     return (
