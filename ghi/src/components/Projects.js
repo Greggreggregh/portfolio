@@ -57,7 +57,7 @@ export const Projects = () => {
                             </Tab.Content>
                         </Tab.Container> */}
                         <Row className="d-flex justify-content-center">
-                            {projects.map((project, index) => {
+                            {projects && projects.map((project, index) => {
                                 return (
                                     <ProjectCard key={index} {...project}/>
                                 )
