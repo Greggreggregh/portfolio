@@ -56,13 +56,13 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
                             </Tab.Content>
                         </Tab.Container> */}
-                        {/* <Row className="d-flex justify-content-center">
+                        <Row className="d-flex justify-content-center">
                             {projects.map((project, index) => {
                                 return (
                                     <ProjectCard key={index} {...project}/>
                                 )
                             })}
-                        </Row> */}
+                        </Row>
                     </Col>
                 </Row>
             </Container>
