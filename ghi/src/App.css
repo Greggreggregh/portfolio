@@ -392,7 +392,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-height: 100px;
   margin: 0 15px 5px 15px;
 }
-.logo-bg {
+.item-no-bg img {
+  max-width: 100px;
+  max-height: 100%;
+  margin: 0 15px 5px 15px;
   background-color: #FFFFFF;
   border-radius: 20%
 }

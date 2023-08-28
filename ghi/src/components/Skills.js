@@ -30,11 +30,11 @@ export const Skills = () => {
           items: 3
         },
         tablet: {
-          breakpoint: { max: 767, min: 464 },
+          breakpoint: { max: 767, min: 576 },
           items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 575, min: 0 },
           items: 1
         }
       };
@@ -62,8 +62,8 @@ export const Skills = () => {
                                     <img src={react} alt="" />
                                     <h5>React</h5>
                                 </div>
-                                <div className="item">
-                                    <img className="logo-bg" src={django} alt="" />
+                                <div className="item-no-bg">
+                                    <img src={django} alt="" />
                                     <h5>Django</h5>
                                 </div>
                                 <div className="item">
@@ -104,7 +104,7 @@ export const Skills = () => {
                                 </div>
                             </Carousel>
                             <Row className={expanded ? "skill-grid" : "d-none"}>
-                                <Col xs={12} sm={6} md={4} lg={3}>
+                                <Col xs={12} sm={true} md={4} lg={3}>
                                     <div className="item">
                                         <img src={python} alt="Python logo" />
                                         <h5>Python</h5>
@@ -123,8 +123,8 @@ export const Skills = () => {
                                     </div>
                                 </Col>
                                 <Col xs={12} sm={6} md={4} lg={3}>
-                                    <div className="item">
-                                        <img className="logo-bg" src={django} alt="" />
+                                    <div className="item-no-bg">
+                                        <img src={django} alt="" />
                                         <h5>Django</h5>
                                     </div>
                                 </Col>
