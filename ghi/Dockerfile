@@ -6,6 +6,8 @@ WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
+ENV REACT_APP_MAIL_SERVER_URL=http://ec2-54-91-117-52.compute-1.amazonaws.com:8888
+
 COPY package.json .
 
 RUN npm install
