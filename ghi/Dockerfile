@@ -6,7 +6,7 @@ WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-ENV REACT_APP_MAIL_SERVER_URL=http://ec2-54-91-117-52.compute-1.amazonaws.com:8888
+ENV REACT_APP_MAIL_SERVER_URL=https://ssedgzjhal.execute-api.us-east-1.amazonaws.com
 
 COPY package.json .
 
