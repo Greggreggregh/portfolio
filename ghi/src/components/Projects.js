@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { ProjectCard } from './ProjectCard';
 import CarPrime from '../assets/gif/20230821_CarPrime_Demo.gif';
 import Plunge from '../assets/gif/20230821_Plunge_Demo.gif';
+import SudokuSolver from '../assets/gif/20230913_Sudoku_Solver_Demo.gif';
 
 export const Projects = () => {
     const projects = [
@@ -12,6 +13,14 @@ export const Projects = () => {
             imgUrl: Plunge,
             codeUrl: "https://gitlab.com/greg-herren/plunge",
             appUrl: "https://greg-herren.gitlab.io/plunge/",
+        },
+        {
+            title: "Sudoku Solver",
+            subtitle: "Solves Any Sudoku Puzzle",
+            description: "Python, Javascript, AWS Lambda, React, Bootstrap, Docker",
+            imgUrl: SudokuSolver,
+            codeUrl: "https://gitlab.com/greg-herren/sudoku-solver",
+            appUrl: "https://sudoku.hey-greg.com/",
         },
         {
             title: "CarPrime",

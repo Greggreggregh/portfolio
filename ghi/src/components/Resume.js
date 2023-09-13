@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
 import { pdfjs, Document, Page } from 'react-pdf';
-import resume from '../assets/pdf/greg_herren_resume.pdf';
+import resume from '../assets/pdf/Greg_Herren_resume.pdf';
 import "pdfjs-dist/build/pdf.worker.entry";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
